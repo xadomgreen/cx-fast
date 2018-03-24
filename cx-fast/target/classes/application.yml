@@ -6,6 +6,17 @@ server:
         min-spare-threads: 30
     port: 8080
     connection-timeout: 5000
-    context-path: /renren-fast
+    context-path: /cx-fast
 application: 
  version: V1.0
+ 
+spring:
+  application:
+    name: cx-fast
+ 
+# springcloud 
+# 注册中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ 
